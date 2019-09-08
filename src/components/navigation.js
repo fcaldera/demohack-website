@@ -1,14 +1,29 @@
 import React from 'react';
-import { Flex, Box, Text, Button } from 'rebass';
+import { Flex, Box, Text, Button, Heading } from 'rebass';
 import { Link } from 'gatsby';
 import Container from './container';
+import styled from '@emotion/styled';
+
+const Brand = styled(Box)`
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  color: black;
+  text-decoration: none;
+`;
+
+Brand.defaultProps = {
+  as: 'a'
+};
+
+
 
 const Navigation = () => (
   <Container>
-    <Flex px={2} alignItems="center">
-      <Text p={2} fontWeight="bold">
+    <Flex py={6} alignItems="center">
+      <Brand mr={9} href="/">
         Crowdz.
-      </Text>
+      </Brand>
       <Box>
         <Link to="/">How it works?</Link>
         <Link to="/">Discover</Link>
