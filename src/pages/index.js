@@ -26,7 +26,7 @@ const Hero = styled(Box)`
   padding-bottom: 140px;
 `;
 
-const Heading = styled(Text)`
+const HeroHeading = styled(Text)`
   font-size: 64px;
   line-height: 1.125;
 `;
@@ -41,7 +41,7 @@ const LookHero = styled(Box)`
   background-image: url(${LookBackground});
   background-size: 712px 600px;
   background-position: top right;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 `;
 
 const ImageAvatar = styled(Box)`
@@ -87,7 +87,7 @@ const IndexPage = () => (
     <Hero bg="lightYellow">
       <Container>
         <Box maxWidth="512px">
-          <h1>Join a Single Purpose Party to Rally A Causes</h1>
+          <HeroHeading>Join a Single Purpose Party to Rally A Causes</HeroHeading>
           <Text as="p" fontSize="18px" lineHeight="32px" pb={4}>
             Big changes happen from one person. Join and crowdfund a cause you
             believe in and help to shape the future of your country.
