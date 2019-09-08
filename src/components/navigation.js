@@ -45,7 +45,7 @@ const Navigation = () => (
   <Container>
     <Flex alignItems="center">
       <Brand mr={9} href="/">
-        Crowdz.
+        Demcracy.
       </Brand>
       <Box>
         <NavLink to="/">How it works?</NavLink>

@@ -48,9 +48,9 @@ const Layout = ({ children }) => {
               All rights reserved
             </Text>
             <Box my={6}>
-              <NavLink to="/">How it works?</NavLink>
-              <NavLink to="/">Discover</NavLink>
-              <NavLink to="/">About</NavLink>
+              <NavLink to="/">Privacy Policy</NavLink>
+              <NavLink to="/">Terms & Condition</NavLink>
+              <NavLink to="/">ContactUs</NavLink>
             </Box>
           </Container>
         </footer>
