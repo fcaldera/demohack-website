@@ -1,15 +1,16 @@
-import Typography from "typography"
+import Typography from 'typography';
+
 const typography = new Typography({
-  baseFontSize: "18px",
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    "Avenir Next",
-    "Helvetica Neue",
-    "Segoe UI",
-    "Helvetica",
-    "Arial",
-    "sans-serif",
+  baseFontSize: '16px',
+  baseLineHeight: 2,
+  googleFonts: [
+    {
+      name: 'Manjari',
+      styles: ['100', '400', '700'],
+    },
   ],
-  bodyFontFamily: ["Georgia", "serif"],
-})
-export default typography
+  headerFontFamily: ['Manjari', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Manjari', 'serif'],
+});
+
+export default typography;

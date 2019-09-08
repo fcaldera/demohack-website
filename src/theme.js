@@ -1,7 +1,13 @@
+import { toTheme } from '@theme-ui/typography'
+import typography from './typography';
+
+const theme = toTheme(typography);
+
 export default {
+  ...toTheme(typography),
   fonts: {
-    body: 'Arial, system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
+    body: 'Manjari, Arial',
+    heading: 'Manjari, sans-serif',
     monospace: 'Menlo, monospace',
   },
   colors: {
