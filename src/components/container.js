@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box } from 'rebass';
 
-const Container = ({ children }) => (
-  <Box maxWidth="1136px" mx="auto">
+const Container = ({ children, ...rest }) => (
+  <Box maxWidth="1136px" mx="auto" {...rest}>
     {children}
   </Box>
 );

@@ -12,7 +12,7 @@ const colors = {
   green: '#00b77c',
   teal: '#0ccc96',
   cyan: '#1db6ef',
-  lightBlue: '#0ba5de',
+  lightBlue: '#AABBE0',
   blueGray: '#678ba7',
   navy: '#5171c0',
   magenta: '#cb4d98',
