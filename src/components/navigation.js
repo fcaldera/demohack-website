@@ -49,8 +49,6 @@ const Navigation = () => (
       </Brand>
       <Box>
         <NavLink to="/">How it works?</NavLink>
-        <NavLink to="/">Discover</NavLink>
-        <NavLink to="/">About</NavLink>
       </Box>
       <Box mx="auto" />
       <Box>
