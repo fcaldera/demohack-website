@@ -30,7 +30,7 @@ import Container from '../components/container';
 
 const Hero = styled(Box)`
   background-image: url(${illustration});
-  background-size: 600px;
+  background-size: 700px;
   background-repeat: no-repeat;
   background-position: bottom right;
   padding-top: 100px;
