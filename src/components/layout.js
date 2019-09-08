@@ -8,8 +8,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Text, Box, Link } from 'rebass'
+import styled from '@emotion/styled';
 
 import Header from "./header"
+import Container from "./container"
+
+const NavLink = styled(Link)`
+  color: gray400;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 24px;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,9 +40,19 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Container>
+            <Text as="p">
+              © Democracy Inc. {new Date().getFullYear()}
+            </Text>
+            <Text as="p" color="gray600">
+              All rights reserved
+            </Text>
+            <Box my={6}>
+              <NavLink to="/">How it works?</NavLink>
+              <NavLink to="/">Discover</NavLink>
+              <NavLink to="/">About</NavLink>
+            </Box>
+          </Container>
         </footer>
       </div>
     </>

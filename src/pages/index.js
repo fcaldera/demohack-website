@@ -11,6 +11,8 @@ import HealthCard from '../images/health-card.png';
 import EducationCard from '../images/education-card.png';
 import EconomicsCard from '../images/economics-card.png';
 import GroupChat from '../images/group-chat.svg';
+import Chart from '../images/chart.svg'
+import Engagement from '../images/engagement.svg'
 import styled from '@emotion/styled';
 import Avatar from 'react-avatar';
 import Container from '../components/container';
@@ -24,7 +26,7 @@ const Hero = styled(Box)`
 const LookHero = styled(Box)`
   background-color: 'none';
   background-image: url(${LookBackground});
-  background-size: 50% 100%;
+  background-size: 712px 600px;
   background-position: top right;
   background-repeat: no-repeat
 `;
@@ -32,6 +34,11 @@ const LookHero = styled(Box)`
 const ImageAvatar = styled(Box)`
   border-radius: 100%;
 `;
+
+const Img = styled.img`
+  max-width: 100%;
+  margin-bottom: 0;
+`
 
 const ImageCard = ({ title, description, color }) => {
   return (
@@ -80,7 +87,7 @@ const IndexPage = () => (
         <Button>Explore ideas</Button>
       </Container>
     </Hero>
-    <Container my={5}>
+    <Container my={8}>
       <Flex justifyContent="space-between" align-items="center">
         <ImageCard
           color="yellow"
@@ -99,7 +106,20 @@ const IndexPage = () => (
         />
       </Flex>
     </Container>
-    <Container my={6}>
+    <Flex my={8}>
+      <Flex flex={1} justifyContent="flex-end">
+        <Img src={Chart}/>
+      </Flex>
+      <Flex flex={1} justifyContent="flex-start">
+        <Flex width="562px" flexDirection="column" justifyContent="center" height="100%">
+          <Heading as="h1" fontSize="50px" mb={3}>Join the power of people to make important changes happen</Heading>
+          <Text as="p" fontSize='18px'>
+            There are important issues that could shape the future of our country. Join likeminded people and help to make those changes happen.
+          </Text>
+        </Flex>
+      </Flex>
+    </Flex>
+    <Container my={8}>
       <Flex justifyContent="space-between" align-items="center">
         <img src={EducationCard} alt="safety" />
         <img src={EconomicsCard} alt="safety" />
@@ -111,45 +131,60 @@ const IndexPage = () => (
     <LookHero height="600px">
       <Container height="100%">
         <Flex width="562px" flexDirection="column" justifyContent="center" height="100%">
-          <Heading as="h1" fontSize="64px">Ut lectus placerat <br />rhoncus ut tempus ac.</Heading>
-          <Text as="p" fontSize={3}>
-            Sit cras auctor tellus ullamcorper <br />tempor pulvinar enim, vestibulum massa. 
+          <Heading as="h1" fontSize="50px" mb={3}>Convert the cause <br/>
+          into a part.</Heading>
+          <Text as="p" fontSize='18px'>
+          A cause with at least 500 members will be converted into a political party. 
           </Text>
         </Flex>
       </Container>
     </LookHero>
-    <Container my={6} wid>
+    <Container my={8} wid>
       <Text as="h1" fontSize={5}>
-        Cursus cursus nisl elit <br/> odio lectus diam euismod. 
+        Participate your way
       </Text>
       <Flex width="950px" ml={12} my={8} flexWrap="wrap">
         <CommentCard
-          title="Find a cause"
+          title="Donate"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
         <CommentCard
-          title="Metus vulputate nunc."
+          title="Become a member"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
         <CommentCard
-          title="Viverra sed et porta."
+          title="Share & recruit"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
         <CommentCard
-          title="Quis et neque suscipit."
+          title="Join the community"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
         <CommentCard
-          title="Metus vulputate nunc."
+          title="Track the progress"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
         <CommentCard
-          title="Viverra sed et porta."
+          title="Create"
           description="Sed at feugiat volutpat amet sed vehicula magna cursus purus feugiat integer"
         />
 
       </Flex>
     </Container>
+    <Flex my={8}>
+      <Flex flex={1} justifyContent="flex-end">
+        <Img src={Engagement}/>
+      </Flex>
+      <Flex flex={1} justifyContent="flex-start">
+        <Flex width="562px" flexDirection="column" justifyContent="center" height="100%">
+          <Heading as="h1" fontSize="50px" mb={3}>Follow the progress <br/>
+          and engage </Heading>
+          <Text as="p" fontSize='18px'>
+            Now that you are a member or a donor of a single-issue party, you can follow the progress, <br/> participate in the discussions and give donations to the party standing for your cause. 
+          </Text>
+        </Flex>
+      </Flex>
+    </Flex>
   </Layout>
 );
 
