@@ -18,9 +18,22 @@ import Avatar from 'react-avatar';
 import Container from '../components/container';
 
 const Hero = styled(Box)`
-  background-color: 'yellow';
   background-image: url(${illustration});
-  background-size: cover;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 100px;
+  padding-bottom: 140px;
+`;
+
+const Heading = styled(Text)`
+  font-size: 64px;
+  line-height: 1.125;
+`;
+
+const SmallAvatar = styled(Avatar)`
+  z-index: ${props => props.zIndex};
+  margin-left: ${props => props.marginLeft};
 `;
 
 const LookHero = styled(Box)`
@@ -71,20 +84,27 @@ const CommentCard = ({ title, description }) => {
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero>
+    <Hero bg="lightYellow">
       <Container>
-        <h1>Crowdfund single purpose parties</h1>
-        <Text as="p">
-          Sit cras auctor tellus ullamcorper tempor pulvinar enim, vestibulum
-          massa.
-        </Text>
-        <Box>
-          <Avatar src="https://i.pravatar.cc/300" />
-          <Avatar src="https://i.pravatar.cc/300?v1" />
-          <Avatar src="https://i.pravatar.cc/300?v2" />
-          <Box>56K Peolple funded causes</Box>
+        <Box maxWidth="512px">
+          <h1>Join a Single Purpose Party to Rally A Causes</h1>
+          <Text as="p" fontSize="18px" lineHeight="32px" pb={4}>
+            Big changes happen from one person. Join and crowdfund a cause you
+            believe in and help to shape the future of your country.
+          </Text>
+          <Flex pb={8} alignItems="center">
+            <Box>
+              <SmallAvatar round size="40px" marginLeft="-0px" src="https://i.pravatar.cc/300" />
+              <SmallAvatar round size="40px" marginLeft="-10px" src="https://i.pravatar.cc/300?v1" />
+              <SmallAvatar round size="40px" marginLeft="-10px" src="https://i.pravatar.cc/300?v2" />
+            </Box>
+            <Flex alignItems="center">
+              <Text fontSize="32px"mr={2} lineHeight="1">56K</Text>
+              <Text fontSize="14px" lineHeight="16px" color="#6B6B70" width="100px">Peolple funded causes</Text>
+            </Flex>
+          </Flex>
+          <Button>Explore ideas</Button>
         </Box>
-        <Button>Explore ideas</Button>
       </Container>
     </Hero>
     <Container my={8}>

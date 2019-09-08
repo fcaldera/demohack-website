@@ -1,5 +1,6 @@
 import { toTheme } from '@theme-ui/typography';
 import typography from './typography';
+import { rgba } from 'polished';
 
 const colors = {
   blue: '#374AD3',
@@ -43,6 +44,7 @@ colors.dark = colors.gray800;
 colors.body = colors.gray900;
 colors.text = colors.black;
 colors.background = colors.white;
+colors.lightYellow = rgba(colors.yellow, 0.3);
 
 export default {
   ...toTheme(typography),

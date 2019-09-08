@@ -4,7 +4,7 @@ import Navigation from './navigation';
 import { Box } from 'rebass';
 
 const Header = ({ siteTitle }) => (
-  <Box as="header" py={3}>
+  <Box as="header" py={3} bg="lightYellow">
     <Navigation />
   </Box>
 );
