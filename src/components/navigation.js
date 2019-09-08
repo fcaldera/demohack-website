@@ -9,6 +9,7 @@ const Brand = styled(Box)`
   font-weight: bold;
   color: black;
   text-decoration: none;
+  display: inline-block;
 `;
 
 Brand.defaultProps = {
@@ -20,6 +21,8 @@ const NavLink = styled(Link)`
   font-size: 18px;
   padding: 23px;
   text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 `;
 
 NavLink.defaultProps = {
@@ -40,7 +43,7 @@ const SmallNavLink = styled(NavLink)`
 
 const Navigation = () => (
   <Container>
-    <Flex py={6} alignItems="center">
+    <Flex alignItems="center">
       <Brand mr={9} href="/">
         Crowdz.
       </Brand>
