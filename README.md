@@ -1,9 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45c2dd07-77ca-4617-b5d9-b247c02e35e2/deploy-status)](https://app.netlify.com/sites/tender-goldwasser-e959df/deploys)
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/45c2dd07-77ca-4617-b5d9-b247c02e35e2/deploy-status)](https://app.netlify.com/sites/tender-goldwasser-e959df/deploys)
 </p>
 <h1 align="center">
   Gatsby's default starter
