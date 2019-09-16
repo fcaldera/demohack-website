@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Text, Button, Link } from 'rebass';
+import { Flex, Box, Button, Link } from 'rebass';
 import { Link as GatsbyLink } from 'gatsby';
 import Container from './container';
 import styled from '@emotion/styled';
@@ -52,7 +52,7 @@ const Navigation = () => (
       </Box>
       <Box mx="auto" />
       <Box>
-        <SmallNavLink>Login</SmallNavLink>
+        <SmallNavLink to="/">Login</SmallNavLink>
         <NavButton as={Link} to="/" bg="black">
           Join beta
         </NavButton>

@@ -6,11 +6,11 @@ import { Box } from 'rebass';
 
 import Navigation from './navigation';
 
-const HeaderWrapper = styled.header`
+const Wrapper = styled.header`
   position: fixed;
   width: 100%;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
 
   &.headroom {
     will-change: transform;
@@ -24,35 +24,29 @@ const HeaderWrapper = styled.header`
   }
 
   &.headroom--not-top {
-    background-color: ${props => props.theme.colors.yellow};
+    background-color: #FFE6C1;
   }
-`
+`;
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
+
   useEffect(() => {
     // grab an element
-    const myElement = document.querySelector("#header");
+    const myElement = document.querySelector('#header');
     // construct an instance of Headroom, passing the element
-    const headroom  = new Headroom(myElement);
+    const headroom = new Headroom(myElement);
     // initialise
     headroom.init();
-  }, [])
+  }, []);
 
   return (
-    <HeaderWrapper id="header">
+    <Wrapper id="header">
       <Box as="header" py={3}>
         <Navigation />
       </Box>
-    </HeaderWrapper>
+    </Wrapper>
   );
 };
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;
