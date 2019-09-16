@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { Text, Box, Link } from 'rebass'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Text, Box, Link } from 'rebass';
 import styled from '@emotion/styled';
 
-import Header from "./header"
-import Container from "./container"
+import Header from './header';
+import Container from './container';
 
 const NavLink = styled(Link)`
   color: gray400;
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -41,9 +41,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <Container>
-            <Text as="p">
-              © Democracy Inc. {new Date().getFullYear()}
-            </Text>
+            <Text as="p">© Democracy Inc. {new Date().getFullYear()}</Text>
             <Text as="p" color="gray600">
               All rights reserved
             </Text>
@@ -56,11 +54,11 @@ const Layout = ({ children }) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -74,7 +74,7 @@ const ImageCard = ({ img, title, description, color }) => {
     <Flex width="344px" m={3}>
       <Card>
         <ImageAvatar bg={color} mb={5}>
-          <Img src={img} height="24" width="24"/>
+          <Img src={img} height="24" width="24" />
         </ImageAvatar>
         <Text as="h3">{title}</Text>
         <Text as="p" fontSize={1}>
@@ -156,19 +156,19 @@ const IndexPage = () => (
     <Container my={8}>
       <Flex justifyContent="space-between" align-items="center">
         <ImageCard
-        img={Search}
+          img={Search}
           color="yellow"
           title="Find a cause"
           description="Discover the causes you believe in"
         />
         <ImageCard
-        img={Board}
+          img={Board}
           color="lightblue"
           title="Pack the cause"
           description="Back the cause by either becoming a member or through a donation. "
         />
         <ImageCard
-        img={Clipboard}
+          img={Clipboard}
           color="pink"
           title="Track the progress of forming party"
           description="Causes with at least 500 members will convert into a single cause political party. If the cause doesn't reach 500 members within three months then your money will be refunded"
